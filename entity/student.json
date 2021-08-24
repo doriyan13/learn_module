@@ -1,0 +1,14 @@
+{
+    "sname":"learn_module.entity.student",
+    "schema": {
+        "fields":{
+            "_id": "תז",
+            "name": "שם",
+            "last_name": "שם משפחה",
+            "password": "סיסמה",
+            "address": "כתובת",
+            "age": "גיל",
+            "lastUpdatedBy":"זמן עדכון אחרון"
+        }
+    }
+}
