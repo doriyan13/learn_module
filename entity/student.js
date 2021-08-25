@@ -22,8 +22,12 @@ const StudentSchema = new Schema({
     age:{
         type:Number,
         required: [true,'age is required']
+    },
+    lastUpdatedBy:{
+        type:String,
+        required: [true,'lastUpdatedBy is required']
     }
 });
 
-const Student = mongoose.model('student',StudentSchema);
+const Student = mongoose.model('student',StudentSchema,'entity');
 module.exports = Student;

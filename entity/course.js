@@ -14,11 +14,15 @@ const CourseSchema = new Schema({
         required: [true,'last name is required']
     },
     students:{
-        type: [student],
+        type: Array,
         required: [false,'students isn\'t required'],
         default: false
+    },
+    lastUpdatedBy:{
+        type:String,
+        required: [true,'lastUpdatedBy is required']
     }
 });
 
-const Course = mongoose.model('course',CourseSchema);
+const Course = mongoose.model('course',CourseSchema,'entity');
 module.exports = Course;
