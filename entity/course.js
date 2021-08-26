@@ -11,7 +11,7 @@ const CourseSchema = new Schema({
     },
     number:{
         type:Number,
-        required: [true,'last name is required']
+        required: [true,'number is required']
     },
     students:{
         type: Array,

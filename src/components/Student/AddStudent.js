@@ -7,7 +7,6 @@ import classes from './AddStudent.module.css'
 import Axios from 'axios';
 // Define a const that will hold the API route to add a student, this way if we will need to update the route we only update it once!
 const addStudentAPI = "http://localhost:8080/api/AddStudent";
-const getAllStudentAPI = "http://localhost:8080/api/GetAllStudents";
 
 
 const AddStudent = (props) => {

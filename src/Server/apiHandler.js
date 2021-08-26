@@ -65,14 +65,14 @@ app.post('/api/GetStudent', async (req,res)=>{
               last_name:req.body.last_name
             });
   // For DEBUG purposes i print the results and display the first student in the answer id:
-  console.log("wanted student: " + result);
-  console.log("first student ID: " + result[0]._id);
+  console.log("wanted student: " + arrOfStudents);
+  console.log("first student ID: " + arrOfStudents[0]._id);
 
   // If the answer isn't empty then i shall return the whole array of result in 'arrOfStudents'
-  if(result != undefined && result != null){
+  if(arrOfStudents != undefined && arrOfStudents != null){
     res.send({
       type:'POST',
-      arrOfStudents: result
+      arrOfStudents: arrOfStudents
     });  
   }
   res.end();
