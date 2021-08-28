@@ -18,7 +18,9 @@ app.use('/api',routes);
 // DB name: learnModule
 // Colleciton name: entity -> inside a schema model you define the collection that you want to save to.
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/learnModule', {useNewUrlParser: true, useUnifiedTopology: true});
+const DB_LOCAL_API = 'mongodb://localhost:27017/learnModule';
+const DB_DOCKER_API = 'mongodb://mongo:27017/learnModule';
+mongoose.connect(DB_DOCKER_API, {useNewUrlParser: true, useUnifiedTopology: true});
 mongoose.Promise = global.Promise; // Overriding the mongoose Promise because it's deprcated.
 
 //------------------------------------------
@@ -30,5 +32,5 @@ db.once('open', function() {
 });
 //------------------------------------------
 // Defining my server and connecting it to index.html:
-const serverport = 8080;//the port in localhost to my server that going to do all the functions.
+const serverport = 8585;//the port in localhost to my server that going to do all the functions.
 app.listen(serverport,()=>console.log(`Opening a Server in port ${serverport}`));//using EC6 to join variable to a string data

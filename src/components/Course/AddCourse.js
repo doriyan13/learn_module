@@ -8,8 +8,8 @@ import classes from './AddCourse.module.css'
 // Import Axios to be able to make an POST/GET request -
 import Axios from 'axios';
 // Define a const that will hold the API route to add a student, this way if we will need to update the route we only update it once!
-const getAllStudentAPI = "http://localhost:8080/api/GetAllStudents";
-const addCourseAPI = "http://localhost:8080/api/AddCourse";
+const getAllStudentAPI = "http://localhost:8585/api/GetAllStudents";
+const addCourseAPI = "http://localhost:8585/api/AddCourse";
 
 // I make the annonymous function async so i can use await to make sure i get my promise from Axios:
 const AddCourse = (props) => {

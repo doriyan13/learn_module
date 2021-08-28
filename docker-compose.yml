@@ -1,0 +1,14 @@
+version: '3'
+services:
+  server-initiator:
+    image: web
+    build: .
+    command: "node src/Server/serverInitiator"
+    ports:
+      - "8585:8585"
+    depends_on:
+      - "mongo"
+  mongo:
+    image: "mongo"
+    ports: 
+      - "27017:27017"
