@@ -3,6 +3,10 @@ const Schema = mongoose.Schema;
 
 // Create student Schema & model -
 const StudentSchema = new Schema({
+    sname:{
+        type:String,
+        required: [true,'sname is required']
+    },
     name:{
         type:String,
         required: [true,'name is required']

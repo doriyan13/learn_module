@@ -54,6 +54,7 @@ const AddStudent = (props) => {
 
       // Send a post request to the AddStudent API to enter a new entry in my mongo:
       Axios.post(addStudentAPI,{
+        sname: "learn_module.entity.student",
         name: studentName,
         last_name: studentLastName,
         password: studentPassword,

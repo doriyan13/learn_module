@@ -62,8 +62,8 @@ const AddCourse = (props) => {
         //event.preventDefault(); // -> if you want to debugg and see all the logs here!
       // I log all the parts of the form to display i indeed get all the needed info 
       // Notice it's just for DEBUG purpose and in the final code you need to REMOVE all of those irrelavent logs!
-      console.log("Current Student name: " + courseName);
-      console.log("Current Student last name: " + courseNumber);
+      console.log("Current Course name: " + courseName);
+      console.log("Current Course number: " + courseNumber);
       console.log("Current Student arr: " + courseStudents);
 
       // Create a variable that will hold the current TimeStamp of the update -
@@ -71,16 +71,17 @@ const AddCourse = (props) => {
       console.log("Current timestamp: " + currTime);
 
       // Send a post request to the AddStudent API to enter a new entry in my mongo:
-      // Axios.post(addCourseAPI,{
-      //   name: courseStudents,
-      //   number: courseNumber,
-      //   students: courseStudents,
-      //   lastUpdatedBy: currTime
-      // }).then((response) => {
-      // //   // *Notice that .then is old JS sentex to handle promises but still exist and handy to handle the response that
-      // //     // you will get from the post request!
-      //   console.log(response);
-      // });
+      Axios.post(addCourseAPI,{
+        sname: "learn_module.entity.course",
+        name: courseName,
+        number: courseNumber,
+        students: courseStudents,
+        lastUpdatedBy: currTime
+      }).then((response) => {
+      //   // *Notice that .then is old JS sentex to handle promises but still exist and handy to handle the response that
+      //     // you will get from the post request!
+        console.log(response);
+      });
     }
     else {
       event.preventDefault(); //prevent refreshing the page. - if the data isn't vaild i want the user to fix it!

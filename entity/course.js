@@ -5,6 +5,10 @@ const Student = require('../entity/student');
 
 // Create course Schema & model -
 const CourseSchema = new Schema({
+    sname:{
+        type:String,
+        required: [true,'sname is required']
+    },
     name:{
         type:String,
         required: [true,'name is required']
