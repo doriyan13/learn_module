@@ -1,71 +1,27 @@
-# Getting Started with Create React App
+# `Welcome to my Learning Module ~`
+In this project i show how to create a full web application.
+the target of this project is to display the basics and guide with some helpfull tips how to start you first full web application.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Main Tools and Languages
+- JavaScript
+- React
+- JSON
+- CSS
+- MongoDB
+- Docker Container
+- REST API requests (via Express & Axios)
 
-## Available Scripts
+## Start the app
+To run this project you need to use WSL with Ubuntu 20.04 and should have: nodejs,mongoDB,mongoose,express,axios,cores,docker-compose,react installed into the npm of the project.
+to start you need to navigate to the project via therminal ('cd learn_module') and execute the command 'docker build -t server-initiator .' 
+then write the command 'docker-compose build' following after that the command 'docker-compose up'.
+now you should have the the server and the mongo images running and all you left to do is to run the cliend via the command 'npm start'.
+finally you can go to the route 'http://local-host:3000' and start explore the app.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# learn_module
+## Setup -
+In case you use wsl and have problem setup your MongoDB use the command: 
+'sudo mongod --dbpath ~/data/db'.
+To start up the React app use the command:  
+'npm start'.
+To start up the Server use the command:
+'node src/Server/serverInitiator'. (notice that you need to start up the mongo before you start up the server).

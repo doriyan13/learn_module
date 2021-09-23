@@ -78,8 +78,8 @@ const AddCourse = (props) => {
         students: courseStudents,
         lastUpdatedBy: currTime
       }).then((response) => {
-      //   // *Notice that .then is old JS sentex to handle promises but still exist and handy to handle the response that
-      //     // you will get from the post request!
+        // *Notice that .then is old JS sentex to handle promises but still exist and handy to handle the response that
+          // you will get from the post request!
         console.log(response);
       });
     }

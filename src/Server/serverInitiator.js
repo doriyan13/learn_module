@@ -18,9 +18,10 @@ app.use('/api',routes);
 // DB name: learnModule
 // Colleciton name: entity -> inside a schema model you define the collection that you want to save to.
 const mongoose = require('mongoose');
+// Switch between if you want to run locally or Container based -
 const DB_LOCAL_API = 'mongodb://localhost:27017/learnModule';
 const DB_DOCKER_API = 'mongodb://mongo:27017/learnModule';
-mongoose.connect(DB_DOCKER_API, {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(DB_LOCAL_API, {useNewUrlParser: true, useUnifiedTopology: true});
 mongoose.Promise = global.Promise; // Overriding the mongoose Promise because it's deprcated.
 
 //------------------------------------------
