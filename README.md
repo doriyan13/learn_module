@@ -20,8 +20,11 @@ finally you can go to the route 'http://local-host:3000' and start explore the a
 
 ## Setup -
 In case you use wsl and have problem setup your MongoDB use the command: 
-'sudo mongod --dbpath ~/data/db'.
+"sudo mongod --dbpath ~/data/db".
+
 To start up the React app use the command:  
-'npm start'.
+"npm start".
+
 To start up the Server use the command:
-'node src/Server/serverInitiator'. (notice that you need to start up the mongo before you start up the server).
+"node src/Server/serverInitiator". 
+(notice that you need to start up the mongo before you start up the server).
