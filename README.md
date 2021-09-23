@@ -17,11 +17,3 @@ to start you need to navigate to the project via therminal ('cd learn_module') a
 then write the command 'docker-compose build' following after that the command 'docker-compose up'.
 now you should have the the server and the mongo images running and all you left to do is to run the cliend via the command 'npm start'.
 finally you can go to the route 'http://local-host:3000' and start explore the app.
-
-## Setup -
-In case you use wsl and have problem setup your MongoDB use the command: 
-'sudo mongod --dbpath ~/data/db'.
-To start up the React app use the command:  
-'npm start'.
-To start up the Server use the command:
-'node src/Server/serverInitiator'. (notice that you need to start up the mongo before you start up the server).
